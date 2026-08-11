@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Carlos Baltazar Website</title>
+	<title>Carlos Baltazar - Portfolio</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <h1>Pretty cool huh, yeah i don't know crap, but i'm learning.</h1>
-  <h2>Basically larping, but through time I will learn.</h2>
-  <img src="Images/IMG_0139.jpg" style="width: 25%;">
-  <h2 style="font-size: 20px;">Me making this website</h2>
+  <div id="fullscreen-viewer" onclick="closeFullscreenBackground(event)">
+    <span id="fs-close" onclick="closeFullscreen()">&times;</span>
+    <span id="fs-prev" onclick="navigateFullscreen(-1)">&#10094;</span>
+    <img id="fs-image" src="" alt="Full size view">
+    <span id="fs-next" onclick="navigateFullscreen(1)">&#10095;</span>
+  </div>
+  <div id="stars"></div>
+  <div id="beggining-section">
+    <div id="beggining-maintext">
+      <h1>Howdy, my name is Carlos Baltazar</h1>
+      <h2>This website will showcase my endeavors.</h2>
+      <h3>I am a Texas A&M Engineering student who likes to tinker around and learn new things.</h3>
+      <div class="social-icons">  
+        <a href="https://github.com/CGBprograms" target="_blank">
+          <img src="Images/GitHub.png" alt="Github">
+        </a>
+        <a href="https://letterboxd.com/carlosb1/" target="_blank">
+          <img src="Images/letterboxd.png" alt="Letterboxd">
+        </a>
+        <a href="https://www.linkedin.com/in/carlos-baltazar-884540380/" target="_blank">
+          <img src="Images/LinkedIn.png" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+    <div id="beggining-image">
+      <img src="Images/IMG_0139.jpg" alt="Carlos Baltazar" />
+      <p> Me making this website</p>
+    </div>
+  </div>
+  <section id="projects"> 
+    <div class="project-section-left">
+      <h1>CGB Games</h1>
+      <i>My game development studio</i>
+      <div class="image-swap-container" data-images="Images/Ks784G.png,Images/Screenshot.png,Images/CGBgameslogo.png">
+        <img class="logo-img" src="Images/CGBgameslogo.png" alt="CGB Games Logo" onclick="openFullscreen(this)">
+        <img class="display-img" src="Images/Ks784G.png" alt="CGB Games screenshot" onclick="openFullscreen(this)">
+      </div>
+      <p>I have always had a passion for game developoment and this studio allows me to share that passion.</p>
+      <div class="buttons">
+        <button onclick="openURL('https://www.youtube.com/@CGB-Games')">Open</button>
+      </div>
+    </div>
+    <div class="project-section-right">
+      <h1>Currently Under Development</h1>
+    </div>
+  </section>
 </body>
-</html>
+  
