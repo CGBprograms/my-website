@@ -45,8 +45,11 @@
 }
 
 #beggining-image img {
-  max-width: 75%;
-  border-radius: 8px;
+  border-radius: 0px;
+  width: 575px;
+  height: 450px;
+  image-rendering: pixelated;
+  cursor: pointer;
 }
 
 #beggining-image p {

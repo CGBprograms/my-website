@@ -43,4 +43,13 @@ function closeFullscreenBackground(event) {
   }
 }
 
+function playAnimation() {
+  const img = document.getElementById("profile-pic");
+  img.src = "Images/PersonCammockGifV3.gif";
+
+  setTimeout(() => {
+    img.src = "Images/PersonCammockV2.png";
+  }, 4000); 
+}
+
 scheduleShootingStars();
