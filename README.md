@@ -1,7 +1,5 @@
 # my-website
 
-Project for my personal website 
-
-Could end up being something or not
+Project for my personal website/portfolio
 
 This is not for CGB Games this is for personal use 
