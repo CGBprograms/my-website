@@ -13,6 +13,7 @@
     <span id="fs-close" onclick="closeFullscreen()">&times;</span>
     <span id="fs-prev" onclick="navigateFullscreen(-1)">&#10094;</span>
     <img id="fs-image" src="" alt="Full size view">
+    <video id="fs-video" controls></video>
     <span id="fs-next" onclick="navigateFullscreen(1)">&#10095;</span>
   </div>
   <div id="stars"></div>
@@ -51,7 +52,18 @@
       </div>
     </div>
     <div class="project-section-right">
-      <h1>Currently Under Development</h1>
+      <h1>Arduino Dino Game</h1>
+      <i>Personal Arduino Project</i>
+      <div class="image-swap-container" data-images="Images/IMG_0303.png,Videos/IMG_0304.mp4">
+        <img class="display-img" src="Images/IMG_0303.png" alt="Dino Game Screenshot" onclick="openFullscreen(this, 'Images/IMG_0303.png')">
+        <video class="display-img" muted loop onclick="openFullscreen(this, 'Videos/IMG_0304.mp4')">
+          <source src="Videos/IMG_0304.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p>Been playing around with Arduino and created this simple dino game inspired from the classic Chrome Dino Game. Build it and have fun with it!</p>
+      <div class="buttons">
+        <button onclick="openURL('https://github.com/CGBprograms/Arduino-Dino-Game')">Open Repository</button>
+      </div>
     </div>
   </section>
 </body>
